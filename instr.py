@@ -1,6 +1,7 @@
+from PyQt5.Qtcore import QTime
 
 win_x, win_y = 200, 100
-win_width, win_height = 1000, 600
+win_width, win_height = 700, 500
 
 txt_hello = "Ласкаво просимо до програми визначення стану здоров'я"
 txt_next = 'Почати'
@@ -26,9 +27,15 @@ txt_hinttest3 = '0'
 txt_starttest1 = 'Почати перший тест'
 txt_starttest2 = 'Почати робити присідання'
 txt_starttest3 = 'Почати фінальний тест'
-txt_timer = ''
+time = QTime(0, 0, 15)
+txt_timer = time.toString("hh:mm:ss")
 
-txt_age = 'Повний років'
+txt_age = 'Повних років'
 txt_finalwin = 'Результати'
 txt_index = "Індекс Руф'є"
 txt_workheart = 'Працездатність серця: '
+txt_res1 = "низька. Терміново зверніться до лікаря"
+txt_res1 = "задовільна. Зверніться до лікаря"
+txt_res1 = "середня. Можливо, варто додатково обстежитись у лікаря"
+txt_res1 = "вище середнього"
+txt_res1 = "висока"
